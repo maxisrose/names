@@ -26,12 +26,9 @@ def dojo():
  		name = 0
  		teach = users.keys()
 	 	print teach[x]
-	 	for y in users.itervalues():
-	 		for z in xrange(len(y)):
-	 			print z
-	 			print y[z]
-	 			first = y[z]
-	 			last = y[z]
-	 			print str(z)+" - "+first[first_name]+" "+last[last_name]+" - "+str(len(first[first_name])+len(last[last_name]))
-[first_name]
+	 	count = 1
+	 	for y in users[teach[x]]:
+	 		for z in xrange(len(y)-1):
+	 			print str(count)+" - "+y["first_name"]+" "+y["last_name"]+" - "+str(len(y["first_name"])+len(y["last_name"]))
+	 		count +=1
 dojo()
